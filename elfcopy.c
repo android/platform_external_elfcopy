@@ -2472,12 +2472,7 @@ update_symbol_values(Elf *elf, GElf_Ehdr *ehdr,
                     sym->st_shndx = shdr_info[scnidx].idx;
                     if (sym->st_value)
                         sym->st_value += delta;
-                    FAILIF_LIBELF(gelf_update_symshndx(symdata,
-                                                       NULL,
-                                                       inner,
-                                                       sym,
-                                                       0) == 0,
-                                  gelf_update_symshndx);
+                    gelf_update_symshndx(symdata, NULL, inner, sym, 0);
                 }
                 else {
                     INFO(" (no change)\n");
