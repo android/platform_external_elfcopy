@@ -1437,7 +1437,7 @@ static void update_relocations_section_offsets(Elf *newelf __attribute((unused))
            for removal, its relocatin entries will be used by the prelinker to know what to prelink.
            Once the prelinker is done, it will call adjust_elf() one more time to actually eliminate the
            relocation section. */
-        PRINT("WARNING: section size according to section [%s]'s header is %lld, but according to data buffer is %ld.\n",
+        PRINT("WARNING: section size according to section [%s]'s header is %lld, but according to data buffer is %zu.\n",
               relsect_info->name,
               relsect_info->shdr.sh_size,
               d->d_size);
