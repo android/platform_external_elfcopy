@@ -919,6 +919,8 @@ void adjust_elf(Elf *elf, const char *elf_name,
                                             init_range_list(),
                                             adjust_alloc_section_offsets);
 
+    sort_ranges(section_ranges);
+
 #ifdef DEBUG
     {
         /* Analyze gaps in the ranges after we've compacted the sections. */
