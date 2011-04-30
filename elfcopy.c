@@ -925,7 +925,7 @@ void adjust_elf(Elf *elf, const char *elf_name,
         int num_ranges;
         range_t *ranges = get_sorted_ranges(section_ranges, &num_ranges);
         if (ranges) {
-            int last_end = ranges->start;
+            GElf_Off last_end = ranges->start;
             int i;
             for (i = 0; i < num_ranges; i++) {
                 shdr_info_t *curr = (shdr_info_t *)ranges[i].user;
