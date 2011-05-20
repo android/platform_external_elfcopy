@@ -1,0 +1,8 @@
+Change-Id: I7246868f2f514641edc05d0b60affa13cb5eead4
+Code-Review+2: Jean-Baptiste Queru <jbq@google.com>
+Verified+1: Jean-Baptiste Queru <jbq@google.com>
+Submitted-by: Jean-Baptiste Queru <jbq@google.com>
+Submitted-at: Wed, 18 Mar 2009 17:56:43 -0700
+Reviewed-on: https://review.source.android.com/9258
+Project: platform/external/elfcopy
+Branch: refs/heads/master
